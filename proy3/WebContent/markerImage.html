@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Marker with images</title>
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" 
+rel="stylesheet" type="text/css" /> 
+
+<script type="text/javascript" 
+src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript" src="js/imarkers.js"></script>
+
+</head>
+
+<body>
+<div>
+<strong>Start:</strong>
+<select id="start" onchange="calcRoute();">
+	<option value="Tampico, Tamaulipas, Mexico">Tampico  </option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Aguascalientes, Aguascalientes, Mexico">Aguascalientes</option>
+	<option value="Monterrey, Nuevo Leon, Mexico">Monterrey</option>
+	<option value="San Luis Potosi, San Luis Potosi, Mexico">San Luis Potosi</option>
+	<option value="Matamoros, Tapms, Mexico">Matamoros</option>
+	<option value="Campeche, Belisario Domínguez, Mexico">Campeche</option>
+	<option value="Durango, Dgo, Mexico">Durango</option>
+	<option value="Hermosillo, Sonora, Mexico">Hermosillo</option>
+	<option value="Ciudad Victoria, Tamps, Mexico">Ciudad Victoria</option>
+	<option value="Acapulco, Guerrero, Mexico">Acapulco</option>
+	<option value="Cancún, Quintana Roo, Mexico">Cancún</option>
+	
+</select>
+<strong>Half:</strong>
+<select id="half" onchange="calcRoute();">
+	<option value="Tampico, Tamaulipas, Mexico">Tampico</option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Aguascalientes, Aguascalientes, Mexico">Aguascalientes</option>
+	<option value="Monterrey, Nuevo Leon, Mexico">Monterrey</option>
+	<option value="San Luis Potosi, San Luis Potosi, Mexico">San Luis Potosi</option>
+	<option value="Matamoros, Tapms, Mexico">Matamoros</option>
+	<option value="Campeche, Belisario Domínguez, Mexico">Campeche</option>
+	<option value="Durango, Dgo, Mexico">Durango</option>
+	<option value="Hermosillo, Sonora, Mexico">Hermosillo</option>
+	<option value="Ciudad Victoria, Tamps, Mexico">Ciudad Victoria</option>
+	<option value="Acapulco, Guerrero, Mexico">Acapulco</option>
+	<option value="Cancún, Quintana Roo, Mexico">Cancún</option>
+
+</select>
+
+<strong>End:</strong>
+<select id="end" onchange="calcRoute1();">
+	<option value="Tampico, Tamaulipas, Mexico">Tampico</option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Aguascalientes, Aguascalientes, Mexico">Aguascalientes</option>
+	<option value="Monterrey, Nuevo Leon, Mexico">Monterrey</option>
+	<option value="San Luis Potosi, San Luis Potosi, Mexico">San Luis Potosi</option>
+	<option value="Matamoros, Tapms, Mexico">Matamoros</option>
+	<option value="Campeche, Belisario Domínguez, Mexico">Campeche</option>
+	<option value="Durango, Dgo, Mexico">Durango</option>
+	<option value="Hermosillo, Sonora, Mexico">Hermosillo</option>
+	<option value="Ciudad Victoria, Tamps, Mexico">Ciudad Victoria</option>
+	<option value="Acapulco, Guerrero, Mexico">Acapulco</option>
+	<option value="Cancún, Quintana Roo, Mexico">Cancún</option>
+
+</select>
+</div>
+<h3>Distance: <strong id="distance">0</strong> km.    
+		Months: <strong id="meses">0</strong> months      
+		Robots: <strong id="rob">0</strong> robots</h3> 
+
+<h3>Distance two: <strong id="distance2">0</strong> km.
+	Months: <strong id="meses1">0</strong> months
+	Robots: <strong id="rob1">0</strong> robots</h3>
+
+
+	<div  id="div_map"   
+		style="width: 1300px; height:600px"> 
+	</div>
+</body>
+</html>
